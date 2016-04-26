@@ -1,22 +1,19 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext);
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext);
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -29,12 +26,10 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
@@ -47,7 +42,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -62,7 +56,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
@@ -72,7 +65,6 @@ fieldset {
     margin: 0;
     padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -80,7 +72,6 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -91,15 +82,20 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
+    background: #f8f8f8;
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+.sec__inner {
+    width: 100%;
+}
 /* icons */
+
 .icon {
     font-family: 'fontello';
     font-style: normal;
@@ -109,16 +105,17 @@ body {
     color: #b9b9b9;
     font-size: 20px;
 }
-/* side menu */
+/* ==========================================================================
+   Side menu
+   ========================================================================== */
+
 .sec--menu {
     position: absolute;
     top: 0;
     left: 0;
+    width: 275px;
+    z-index: 999;
     background: #303030;
-    width: 305px;
-}
-.sec--menu .sec__inner {
-    width: 100%;
 }
 .menu-list {
     margin: 0;
@@ -137,12 +134,13 @@ body {
 }
 .badge {
     float: right;
+    margin: 4px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     color: #fff;
     font-weight: 600;
     font-size: 12px;
@@ -151,7 +149,7 @@ body {
 }
 .search-form {
     position: relative;
-    padding: 5px 15px 10px 15px;
+    padding: 5px 10px 10px 10px;
     background: #353535;
 }
 .search-btn {
@@ -160,12 +158,12 @@ body {
     margin-left: 6px;
     border: none;
     outline: none;
-    color: #8f8f8f; 
-    background: transparent; 
+    color: #8f8f8f;
+    background: transparent;
 }
 .search-input {
-    width: 236px;
-    height: 30px;
+    width: 206px;
+    height: 27px;
     padding-left: 40px;
     border: none;
     background: #f8f8f8;
@@ -177,8 +175,8 @@ body {
 }
 .link-default {
     display: block;
-    width: 275px;
-    padding: 15px;
+    width: 255px;
+    padding: 10px;
     color: #b9b9b9;
     background: #353535;
     text-decoration: none;
@@ -210,24 +208,106 @@ body {
 .link-default img + .label {
     padding-left: 10px;
 }
+/* ==========================================================================
+   Content
+   ========================================================================== */
 
+.sec--content {
+    background: #f8f8f8;
+    color: #373737;
+}
+/* home */
 
+.sec--header {
+    position: relative;
+    height: 45px;
+    background: #ea4c88;
+}
+.tab-header {
+    margin: 0;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.btn-header {
+    position: absolute;
+    top: 6px;
+    border: 0;
+    color: #fff;
+    background: transparent;
+}
+.btn-header:hover {
+    outline: 0;
+}
+.btn-header .icon {
+    font-size: 20px;
+    font-weight: 300;
+}
+.btn-header--left {
+    left: 13px;
+}
+.btn-header--right {
+    right: 13px;
+}
+/* submenu */
 
+.submenu-list {
+    margin: 22px 10px;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.submenu-list__item {
+    display: inline-block;
+    margin-right: 27px;
+}
+.submenu-list__item:last-child {
+    margin-right: 0;
+}
+.submenu-list__item a {
+    color: #373737;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+}
+.item--current a {
+    font-weight: 500;
+}
+/* dlaczego nie działa strzałka??? */
 
+.item--curent:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: #000 transparent transparent transparent;
+}
+/* main */
 
-
-
-
-
-
-
-
-
-
+.sec--main {
+    background: #f8f8f8;
+}
+.sec--main .sec__inner {} .apps-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    border-top: 3px solid #ccc;
+}
+.apps-list:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+}
+.apps-list__item img {
+    float: left;
+    width: 50%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 /*
  * Hide visually and from screen readers
  */
@@ -235,7 +315,6 @@ body {
 .hidden {
     display: none !important;
 }
-
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -251,7 +330,6 @@ body {
     position: absolute;
     width: 1px;
 }
-
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -267,7 +345,6 @@ body {
     position: static;
     width: auto;
 }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -275,7 +352,6 @@ body {
 .invisible {
     visibility: hidden;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -290,14 +366,15 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -307,14 +384,12 @@ body {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -328,66 +403,58 @@ body {
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
+        
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
+    
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
+    
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
