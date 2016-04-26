@@ -9,6 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext);
 
 html {
     color: #222;
@@ -94,9 +95,121 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+/* icons */
+.icon {
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+}
+.nav--icon {
+    color: #b9b9b9;
+    font-size: 20px;
+}
+/* side menu */
+.sec--menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303030;
+    width: 305px;
+}
+.sec--menu .sec__inner {
+    width: 100%;
+}
+.menu-list {
+    margin: 0;
+    padding: 0;
+}
+.menu-list__item {
+    display: block;
+    margin-bottom: 2px;
+}
+.menu-list__item:last-child {
+    padding-bottom: 77px;
+}
+.menu-list__item img {
+    width: 28px;
+    height: 28px;
+}
+.badge {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 21px;
+    height: 21px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 50%;
+    background: #ea4c88;
+}
+.search-form {
+    position: relative;
+    padding: 5px 15px 10px 15px;
+    background: #353535;
+}
+.search-btn {
+    position: absolute;
+    top: 8px;
+    margin-left: 6px;
+    border: none;
+    outline: none;
+    color: #8f8f8f; 
+    background: transparent; 
+}
+.search-input {
+    width: 236px;
+    height: 30px;
+    padding-left: 40px;
+    border: none;
+    background: #f8f8f8;
+    color: #303030;
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.link-default {
+    display: block;
+    width: 275px;
+    padding: 15px;
+    color: #b9b9b9;
+    background: #353535;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+.link-default:hover {
+    color: #fff;
+    background: #ea4c88;
+    transition: all 0.5s ease-in;
+}
+.link-default:hover .badge {
+    color: #ea4c88;
+    background: #fff;
+    transition: all 0.5s ease-in;
+}
+.link-default:hover .icon {
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+.clearfix {
+    clear: both;
+    display: block;
+    height: 10px;
+}
+.link-default .nav--icon + .label {
+    padding-left: 10px;
+}
+.link-default img + .label {
+    padding-left: 10px;
+}
 
 
 

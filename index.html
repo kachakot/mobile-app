@@ -6,27 +6,91 @@
         <title>Mobile App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fontello.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-
+        <nav class="sec sec--menu">
+            <div class="sec__inner">
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <form class="search-form">
+                            <button class="search-btn" type="submit"><i class="icon icon-search"></i></button>
+                            <input class="search-input" type="search" placeholder="Search">
+                        </form>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="profile.html">
+                        <img src="img/avatar1.png" alt="avatar">
+                        <span class="label">Profile</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#notifications">
+                        <i class="icon nav--icon icon-chart"></i>
+                        <span class="label">Noifications</span>
+                        <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#upload-shot">
+                        <i class="icon nav--icon icon-upload-cloud"></i>
+                        <span class="label">Upload Shot</span>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#shot">
+                        <i class="icon nav--icon icon-picture"></i>
+                        <span class="label">Shots</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#explore">
+                        <i class="icon nav--icon icon-eye-outline"></i>
+                        <span class="label">Explore</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#designers">
+                        <i class="icon nav--icon icon-users"></i>
+                        <span class="label">Designers</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#teams">
+                        <i class="icon nav--icon icon-group"></i>
+                        <span class="label">Teams</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#jobs">
+                        <i class="icon nav--icon icon-address"></i>
+                        <span class="label">Jobs</span>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#sign-out">
+                        <i class="icon nav--icon icon-logout"></i>
+                        <span class="label">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
