@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mobile App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fontello.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <div id="loader"></div>
+        <nav class="sec sec--menu">
+            <div class="sec__inner">
+                <form class="search-form">
+                    <button class="search-btn" type="submit"><i class="icon icon-search"></i></button>
+                    <input class="search-input" type="search" placeholder="Search">
+                </form>
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a class="link-default" href="profile.html">
+                            <img src="img/avatar1.png" alt="avatar">
+                            <span class="label">Profile</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#notifications">
+                            <i class="icon nav--icon icon-chart"></i>
+                            <span class="label">Noifications</span>
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#upload-shot">
+                            <i class="icon nav--icon icon-upload-cloud"></i>
+                            <span class="label">Upload Shot</span>
+                        </a>
+                    </li>
+                    <li class="space"></li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#shot">
+                            <i class="icon nav--icon icon-picture"></i>
+                            <span class="label">Shots</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#explore">
+                            <i class="icon nav--icon icon-eye-outline"></i>
+                            <span class="label">Explore</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#designers">
+                            <i class="icon nav--icon icon-users"></i>
+                            <span class="label">Designers</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#teams">
+                            <i class="icon nav--icon icon-group"></i>
+                            <span class="label">Teams</span>
+                        </a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#jobs">
+                            <i class="icon nav--icon icon-address"></i>
+                            <span class="label">Jobs</span>
+                        </a>
+                    </li>
+                    <li class="space"></li>
+                    <li class="menu-list__item">
+                        <a class="link-default" href="#sign-out">
+                            <i class="icon nav--icon icon-logout"></i>
+                            <span class="label">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sec sec--content" id="content" style="display:none;">
+            <header class="sec sec--header">
+                <div class="sec__inner">
+                    <button class="btn-header btn-header--left hamburger">
+                    <i class="icon icon-menu"></i>
+                    </button>
+                    <h1 class="tab-header">Shot</h1>
+                    <button class="btn-header btn-header--right">
+                    <i class="icon icon-arrows-ccw"></i>
+                    </button>
+                </div>
+            </header>
+            <main class="sec sec--main">
+                <div class="sec__inner">
+                    <div class="profile-box profile-box--alt">
+                        <div class="profile-box__inner">
+                            <div class="profile-box__avatar">
+                                <img class="img-medium" src="img/avatar1.png" alt="avatar">
+                                <button class="btn-add">
+                                    <i class="icon plus--icon icon-plus-circle"></i>
+                                </button>
+                            </div>
+                            <h2 class="profile-box__name">Flat Icons</h2>
+                            <div class="profile-box__more">by <span class="decoration">Mark / Hipstacowboys</span></div>
+                            <div class="profile-box__date">Nov 10, 2013</div>
+                        </div>
+                    </div>
+                    <div class="image-apps">
+                        <img src="img/apps.png">
+                    </div>
+                    <div class="action-box">
+                        <div class="action-box__inner">
+                            <div class="action-box__tools">
+                                <ul class="tools-list">
+                                    <li class="tool-list__item"><a href="#">
+                                        <i class="icon tool--icon icon-heart"></i><span class="amount">287</span></a>
+                                    </li>
+                                    <li class="tool-list__item item--current"><a href="#">
+                                        <i class="icon tool--icon icon-chat-empty"></i><span class="amount">12</span></a>
+                                    </li>
+                                    <li class="tool-list__item"><a href="#">
+                                        <i class="icon tool--icon icon-trash-empty"></i><span class="amount">145</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="space"></div>
+                            <div class="action-box__comments">
+                                <ul class="comments-list">
+                                    <li class="comments-list__item">
+                                        <a class="link-default link-default--alt" href="#">
+                                        <img class="img-small" src="img/avatar2.png" alt-"avatar">
+                                        <div class="message">
+                                            <p class="message__user">Mark Mayers</p>
+                                            <p class="message__text">Awesome man! Great shot.</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="comments-list__item">
+                                        <a class="link-default link-default--alt" href="#">
+                                        <img class="img-small" src="img/avatar3.png" alt-"avatar">
+                                        <div class="message">
+                                            <p class="message__user">Ahmund Lakjev</p>
+                                            <p class="message__text">Perfect!</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="comments-list__item">
+                                        <a class="link-default link-default--alt" href="#">
+                                        <img class="img-small" src="img/avatar4.png" alt-"avatar">
+                                        <div class="message">
+                                            <p class="message__user">Peter Jobs</p>
+                                            <p class="message__text">Love colors!</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="comments-list__item">
+                                        <a class="link-default link-default--alt" href="#">
+                                        <img class="img-small" src="img/avatar2.png" alt-"avatar">
+                                        <div class="message">
+                                            <p class="message__user">Amy Wallis</p>
+                                            <p class="message__text">You hit the line man! Congratulations!</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <form class="send-comment">
+                            <input class="input-comment" type="text" placeholder="Write comment">
+                            <button class="btn-comment" type="submit"><i class="icon icon-chat-empty"></i></button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

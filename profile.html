@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/fontello.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body onload="myFunction()">
+    <body>
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -21,68 +21,66 @@
         <div id="loader"></div>
         <nav class="sec sec--menu">
             <div class="sec__inner">
+                <form class="search-form">
+                    <button class="search-btn" type="submit"><i class="icon icon-search"></i></button>
+                    <input class="search-input" type="search" placeholder="Search">
+                </form>
                 <ul class="menu-list">
                     <li class="menu-list__item">
-                        <form class="search-form">
-                            <button class="search-btn" type="submit"><i class="icon icon-search"></i></button>
-                            <input class="search-input" type="search" placeholder="Search">
-                        </form>
-                    </li>
-                    <li class="menu-list__item">
                         <a class="link-default" href="profile.html">
-                        <img src="img/avatar1.png" alt="avatar">
-                        <span class="label">Profile</span>
+                            <img src="img/avatar1.png" alt="avatar">
+                            <span class="label">Profile</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#notifications">
-                        <i class="icon nav--icon icon-chart"></i>
-                        <span class="label">Noifications</span>
-                        <span class="badge">5</span>
+                            <i class="icon nav--icon icon-chart"></i>
+                            <span class="label">Noifications</span>
+                            <span class="badge">5</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#upload-shot">
-                        <i class="icon nav--icon icon-upload-cloud"></i>
-                        <span class="label">Upload Shot</span>
+                            <i class="icon nav--icon icon-upload-cloud"></i>
+                            <span class="label">Upload Shot</span>
                         </a>
                     </li>
-                    <li class="clearfix"></li>
+                    <li class="space"></li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#shot">
-                        <i class="icon nav--icon icon-picture"></i>
-                        <span class="label">Shots</span>
+                            <i class="icon nav--icon icon-picture"></i>
+                            <span class="label">Shots</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#explore">
-                        <i class="icon nav--icon icon-eye-outline"></i>
-                        <span class="label">Explore</span>
+                            <i class="icon nav--icon icon-eye-outline"></i>
+                            <span class="label">Explore</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#designers">
-                        <i class="icon nav--icon icon-users"></i>
-                        <span class="label">Designers</span>
+                            <i class="icon nav--icon icon-users"></i>
+                            <span class="label">Designers</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#teams">
-                        <i class="icon nav--icon icon-group"></i>
-                        <span class="label">Teams</span>
+                            <i class="icon nav--icon icon-group"></i>
+                            <span class="label">Teams</span>
                         </a>
                     </li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#jobs">
-                        <i class="icon nav--icon icon-address"></i>
-                        <span class="label">Jobs</span>
+                            <i class="icon nav--icon icon-address"></i>
+                            <span class="label">Jobs</span>
                         </a>
                     </li>
-                    <li class="clearfix"></li>
+                    <li class="space"></li>
                     <li class="menu-list__item">
                         <a class="link-default" href="#sign-out">
-                        <i class="icon nav--icon icon-logout"></i>
-                        <span class="label">Sign Out</span>
+                            <i class="icon nav--icon icon-logout"></i>
+                            <span class="label">Sign Out</span>
                         </a>
                     </li>
                 </ul>
@@ -111,7 +109,7 @@
                                 </button>
                             </div>
                             <h2 class="profile-box__name">Mark Dvorak</h2>
-                            <div class="profile-box__site"><a href="#" target="_blank">www.hipstacowboys.com</a></div>
+                            <div class="profile-box__more"><a href="#" target="_blank">www.hipstacowboys.com</a></div>
                         </div>
                     </div>
                     <nav class="sec sec--tools">
@@ -133,10 +131,10 @@
                         </div>
                     </nav>
                     <ul class="apps-list">
-                        <li class="apps-list__item"><a href="#"><img src="img/clients.png" alt="clients app"></a></li>
-                        <li class="apps-list__item"><a href="#"><img src="img/synchronize.png" alt="synchronize app"></a></li>
-                        <li class="apps-list__item"><a href="#"><img src="img/apps.png" alt="apps"></a></li>
-                        <li class="apps-list__item"><a href="#"><img src="img/locked_heart.png" alt="safe app"></a></li>
+                        <li class="apps-list__item"><a href="details.html"><img src="img/clients.png" alt="clients app"></a></li>
+                        <li class="apps-list__item"><a href="details.html"><img src="img/synchronize.png" alt="synchronize app"></a></li>
+                        <li class="apps-list__item"><a href="details.html"><img src="img/apps.png" alt="apps"></a></li>
+                        <li class="apps-list__item"><a href="details.html"><img src="img/locked_heart.png" alt="safe app"></a></li>
                     </ul>
                 </div>
             </main>

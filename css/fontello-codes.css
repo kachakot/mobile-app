@@ -15,7 +15,10 @@
 .icon-briefcase:before { content: '\e80d'; } /* '' */
 .icon-mail:before { content: '\e80e'; } /* '' */
 .icon-plus-circle:before { content: '\e80f'; } /* '' */
-.icon-export:before { content: '\e810'; } /* '' */
-.icon-left-circled2:before { content: '\e811'; } /* '' */
+.icon-left-circled2:before { content: '\e810'; } /* '' */
+.icon-export:before { content: '\e811'; } /* '' */
 .icon-forward:before { content: '\e812'; } /* '' */
 .icon-cancel-circled2:before { content: '\e813'; } /* '' */
+.icon-heart:before { content: '\e814'; } /* '' */
+.icon-chat-empty:before { content: '\e815'; } /* '' */
+.icon-trash-empty:before { content: '\e816'; } /* '' */

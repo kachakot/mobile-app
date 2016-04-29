@@ -1,12 +1,14 @@
 function myFunction() {
-    setTimeout(showPage, 3000);
+    setTimeout(showPage, 2000);
 }
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
 }
-$(function() {
+
+$(document).ready(function() {
+	myFunction();
     var $menu = $('.sec--menu');
     $menu.hide();
     $('.hamburger').on('click', function(event) {

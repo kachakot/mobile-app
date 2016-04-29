@@ -143,6 +143,18 @@ body {
     color: #373737;
     font-size: 20px;
 }
+
+/* images */
+.img-small {
+    float: left;
+    width: 55px;
+    height: 55px;
+}
+.img-medium {
+    float: left;
+    width: 65px;
+    height: 65px;
+}
 /* ==========================================================================
    Side menu
    ========================================================================== */
@@ -169,6 +181,10 @@ body {
 .menu-list__item img {
     width: 28px;
     height: 28px;
+}
+.space {
+    height: 10px;
+    content: '';
 }
 .badge {
     float: right;
@@ -221,6 +237,17 @@ body {
     font-size: 15px;
     font-weight: 300;
 }
+.link-default--alt {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    color: #464646;
+    background: #f8f8f8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    border-bottom: 1px solid #e5e5e5;
+}
 .link-default:hover {
     color: #fff;
     background: #ea4c88;
@@ -252,15 +279,18 @@ body {
 /* ==========================================================================
    Content
    ========================================================================== */
-
 .sec--content {
     background: #f8f8f8;
     color: #373737;
 }
-/* home */
 
+/* Header
+   ========================================================================== */
 .sec--header {
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 45px;
     background: #ea4c88;
 }
@@ -292,8 +322,20 @@ body {
 .btn-header--right {
     right: 13px;
 }
-/* submenu */
+/* Main
+   ========================================================================== */
 
+.sec--main {
+    margin-top: 67px;
+    background: #f8f8f8;
+}
+.sec--submenu + .sec--main {
+     margin-top: 0;
+}
+/* home view */
+.sec--submenu {
+    margin-top: 67px;
+}
 .submenu-list {
     margin: 22px 10px;
     padding-left: 0;
@@ -316,24 +358,6 @@ body {
 .item--current a {
     font-weight: 500;
 }
-/* dlaczego nie działa strzałka??? */
-
-.item--curent:after {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 100px 100px 0 100px;
-    border-color: #000 transparent transparent transparent;
-}
-/* Main
-   ========================================================================== */
-
-.sec--main {
-    background: #f8f8f8;
-}
-.sec--main .sec__inner {}
-/* apps-list */
-
 .apps-list {
     list-style-type: none;
     padding-left: 0;
@@ -344,32 +368,35 @@ body {
     float: left;
     width: 50%;
 }
-/*profile-box */
+/* profile view */
 
 .profile-box {
-    margin: 30px 0;
+    margin: 20px 0;
     text-align: center;
 }
 .profile-box__name {
     margin: 0;
     font-size: 17px;
 }
-.profile-box__site {
+.profile-box__more {
     font-size: 13px;
 }
-.profile-box__site a {
+.profile-box__more a {
     color: #373737;
     text-decoration: none;
 }
-.profile-box__site a:hover {
+.profile-box__more a:hover {
     color: #373737;
     text-decoration: underline;
 }
 .profile-box__avatar + .profile-box__name {
     margin-top: 30px;
 }
-.profile-box__name + .profile-box__site {
-    margin-top: 8px;
+.profile-box__name + .profile-box__more {
+    margin-top: 4px;
+}
+.profile-box__more + .profile-box__date {
+    margin-top: 4px;
 }
 .profile-box__avatar .btn-add {
     position: absolute;
@@ -394,9 +421,7 @@ body {
 .btn-add {
     outline: none;
 }
-/* tools-list */
-
-.sec--tools {} .tools-list {
+.tools-list {
     margin: 0;
     padding: 23px 0;
     list-style-type: none;
@@ -420,7 +445,103 @@ body {
     transition: all 0.5s ease-in;
 }
 .tool--icon + .amount {
-    margin-left: 8px;
+    margin-left: 6px;
+}
+/* details view */
+.profile-box--alt {
+    margin: 20px 0;
+    padding-left: 12px;
+    text-align: left;
+}
+.profile-box--alt .profile-box__name {
+    padding-top: 6px;
+    margin-left: 90px;
+}
+.profile-box--alt .profile-box__more {
+    margin-left: 90px;
+}
+.profile-box__date {
+    margin-left: 90px;
+    font-size: 12px;
+    color: #e5e5e5;
+}
+.profile-box--alt .profile-box__avatar .btn-add {
+    position: absolute;
+    top: 115px;
+    left: 25px;
+}
+.decoration {
+    color: #ea4c88;
+}
+.image-apps {
+    margin-top: 25px;
+}
+.action-box {
+    background: #ffffff;
+}
+.action-box__tools {
+    background: #e5e5e5;
+}
+.action-box__comments {
+    background: #f8f8f8;
+}
+.comments-list {
+    margin: 0;
+    padding: 15px 0;
+    list-style-type: none;
+    text-align: left;
+}
+.image-apps img {
+    width: 100%;
+}
+.message {
+    margin-left: 75px;
+}
+.message:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.message__user {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #ea4c88;
+    font-weight: 500;
+}
+.link-default--alt:hover .message__user {
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+.message__text {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+.send-comment {
+    text-align: center;
+    padding: 7px 10px;
+    background: #e5e5e5;
+}
+.input-comment {
+    width: 230px;
+    height: 30px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    outline: none;
+}
+.btn-comment {
+    position: relative;
+    top: 1px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: #ea4c88;
+    outline: none;
 }
 /* ==========================================================================
    Helper classes
