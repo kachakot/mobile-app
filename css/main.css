@@ -143,8 +143,8 @@ body {
     color: #373737;
     font-size: 20px;
 }
-
 /* images */
+
 .img-small {
     float: left;
     width: 55px;
@@ -160,7 +160,11 @@ body {
    ========================================================================== */
 
 .sec--menu {
-    position: absolute;
+    display: none;
+}
+.sec--menu.active {
+    display: block;
+    position: fixed;
     top: 0;
     left: 0;
     width: 275px;
@@ -240,7 +244,7 @@ body {
 .link-default--alt {
     display: block;
     width: 100%;
-    padding: 8px 12px;
+    padding: 8px 13px;
     color: #464646;
     background: #f8f8f8;
     text-decoration: none;
@@ -273,21 +277,23 @@ body {
 .link-default img + .label {
     padding-left: 10px;
 }
-.hamburger a {
+.hamburger {
     outline: none;
 }
 /* ==========================================================================
    Content
    ========================================================================== */
+
 .sec--content {
     background: #f8f8f8;
     color: #373737;
 }
-
 /* Header
    ========================================================================== */
+
 .sec--header {
     position: fixed;
+    z-index: 99;
     left: 0;
     top: 0;
     width: 100%;
@@ -330,9 +336,11 @@ body {
     background: #f8f8f8;
 }
 .sec--submenu + .sec--main {
-     margin-top: 0;
+    z-index: 999;
+    margin-top: 0;
 }
 /* home view */
+
 .sec--submenu {
     margin-top: 67px;
 }
@@ -427,6 +435,9 @@ body {
     list-style-type: none;
     text-align: center;
 }
+.tools-list--alt {
+    padding-bottom: 5px;
+}
 .tool-list__item {
     display: inline;
     margin-right: 26px;
@@ -447,10 +458,21 @@ body {
 .tool--icon + .amount {
     margin-left: 6px;
 }
+.apps-triangle {
+    position: relative;
+    top: 15px;
+    margin-left: 10vw;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #f8f8f8 transparent transparent transparent;
+}
 /* details view */
+
 .profile-box--alt {
     margin: 20px 0;
-    padding-left: 12px;
+    padding-left: 13px;
     text-align: left;
 }
 .profile-box--alt .profile-box__name {
@@ -469,6 +491,7 @@ body {
     position: absolute;
     top: 115px;
     left: 25px;
+    z-index: 1;
 }
 .decoration {
     color: #ea4c88;
@@ -481,6 +504,15 @@ body {
 }
 .action-box__tools {
     background: #e5e5e5;
+}
+.action-box__triangle {
+    position: relative;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #e5e5e5 transparent transparent transparent;
 }
 .action-box__comments {
     background: #f8f8f8;

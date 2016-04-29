@@ -8,14 +8,12 @@ function showPage() {
 }
 
 $(document).ready(function() {
-	myFunction();
-    var $menu = $('.sec--menu');
-    $menu.hide();
-    $('.hamburger').on('click', function(event) {
-        event.stopPropagation();
-        $menu.toggle('slow');
-    });
-    $('body').on('click', function() {
-        $menu.hide();
-    });
+    myFunction();
+    $('.hamburger').on('click', function(e) {
+        $('.sec--menu').toggleClass('active');
+        e.stopPropagation();
+    })
+    $('body').on('click', function(e) {
+        $('.sec--menu').removeClass('active');
+    })
 });
