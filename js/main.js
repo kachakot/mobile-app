@@ -10,10 +10,13 @@ function showPage() {
 $(document).ready(function() {
     myFunction();
     $('.hamburger').on('click', function(e) {
-        $('.sec--menu').toggleClass('active');
+        $(this).parents('.nav-box').toggleClass('active');
         e.stopPropagation();
     })
+    $('.nav-box').on('click', function (e) {
+         e.stopPropagation();
+    });
     $('body').on('click', function(e) {
-        $('.sec--menu').removeClass('active');
+        $('.nav-box').removeClass('active');
     })
 });
